@@ -17,23 +17,6 @@
   color: rgba(0,0,0,0.4);
   cursor: pointer;
 }
-.Payment-item button {
-  background-color: transparent;
-  border: none;
-  outline: none;
-}
-/* 
-.Payment-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  border: 1px solid #002E80;
-  color: #002E80;
-  border-radius: 8px;
-  width: 100px;
-  height: 40px;
-  cursor: pointer;
-} */
 
 .Payment-element {
   display: flex;

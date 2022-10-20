@@ -1,6 +1,7 @@
 import { ProductButton } from '../buttons';
 
-export const Product = ({ product }) => {
+export const Product = ({ product, handleCart }) => {
+  
   return (
     <article className='Products-item'>
       <div className='Products-item-info'>
@@ -12,7 +13,10 @@ export const Product = ({ product }) => {
       <figure>
         <img src={ product.image } alt={ product.title } />
       </figure>
-      <ProductButton />
+      <ProductButton 
+        product={ product }
+        handleCart={ handleCart }
+      />
     </article>
   )
 }

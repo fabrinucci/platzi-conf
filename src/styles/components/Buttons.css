@@ -23,6 +23,7 @@
   height: 50px;
   cursor: pointer;
   transition: all .3s ease-out;
+  font-size: 17px;
 }
 
 .Btn-Second:hover {

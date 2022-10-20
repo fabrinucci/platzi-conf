@@ -1,7 +1,17 @@
+import { useContext } from 'react';
+import { AppContext } from '../context';
 import '../styles/components/Products.css';
 import { Product } from './';
 
-export const Products = ({ products }) => {
+export const Products = () => {
+
+  const { state, addToCart } = useContext(AppContext);
+  const { products } = state;
+  
+  const handleCart = product => {
+    addToCart(product);
+  }
+
   return (
     <main className='Products'>
       <section className="Products-content">
@@ -12,6 +22,7 @@ export const Products = ({ products }) => {
               <Product 
                 key={ product.id } 
                 product={ product }
+                handleCart={ handleCart }
               />
             ))
           }

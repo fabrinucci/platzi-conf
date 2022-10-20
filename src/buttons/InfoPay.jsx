@@ -1,12 +1,15 @@
-import { Link } from 'react-router-dom';
 import { MdOutlinePayment } from 'react-icons/md';
 import '../styles/components/Buttons.css';
 
-export const InfoPay = () => {
+export const InfoPay = ({ handlePay }) => {
+
   return (
-    <Link to='/checkout/payment' className='Btn-Second InfoNextButton'>
+    <button 
+      className='Btn-Second InfoNextButton'
+      onClick={ handlePay }  
+    >
       <p>Payment</p> 
-      <MdOutlinePayment />
-    </Link>
+      <MdOutlinePayment size={20}/>
+    </button>
   )
 }

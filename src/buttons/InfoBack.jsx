@@ -6,7 +6,7 @@ import '../styles/components/Buttons.css';
 export const InfoBack = () => {
   return (
     <Link to='/checkout' className='Btn-Second InfoBackButton'>
-      <BiArrowBack /> 
+      <BiArrowBack size={20}/> 
       <p>Go back</p>
     </Link>
   )
